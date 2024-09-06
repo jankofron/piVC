@@ -458,7 +458,7 @@ public class PiGui extends JFrame {
 	            if(code!=null){
 	            	
 	            	//This is needed to circumvent a bug in xml light, which is used by the piVC server
-	            	code = code.replaceAll("\n", "\n\b");
+	            	//code = code.replaceAll("\n", "\n\b");
 	            	
 	            	/*
 	            	int index=0;

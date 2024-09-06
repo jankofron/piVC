@@ -142,10 +142,10 @@ public abstract class InputHandler extends KeyAdapter
 	 */
 	public static String getActionName(ActionListener listener)
 	{
-		Enumeration enum_ = getActions();
-		while(enum_.hasMoreElements())
+		Enumeration<String> _enum = getActions();
+		while(_enum.hasMoreElements())
 		{
-			String name = (String)enum_.nextElement();
+			String name = (String)_enum.nextElement();
 			ActionListener _listener = getAction(name);
 			if(_listener == listener)
 				return name;
@@ -191,7 +191,7 @@ public abstract class InputHandler extends KeyAdapter
 	/**
 	 * Grabs the next key typed event and invokes the specified
 	 * action with the key as a the action command.
-	 * @param action The action
+	 * @param listener The action
 	 */
 	public void grabNextKeyStroke(ActionListener listener)
 	{

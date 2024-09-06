@@ -91,7 +91,7 @@ public class SyntaxUtilities
 	{
 		SyntaxStyle[] styles = new SyntaxStyle[Token.ID_COUNT];
 
-		styles[Token.COMMENT1] = new SyntaxStyle(new Color(0x009900),true,false);
+		styles[Token.COMMENT1] = new SyntaxStyle(Color.black,true,false);
 		styles[Token.COMMENT2] = new SyntaxStyle(new Color(0x990033),true,false);
 		styles[Token.KEYWORD1] = new SyntaxStyle(Color.black,false,true);
 		styles[Token.KEYWORD2] = new SyntaxStyle(Color.magenta,false,false);

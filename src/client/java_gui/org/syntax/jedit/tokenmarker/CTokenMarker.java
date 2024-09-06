@@ -33,7 +33,6 @@ public class CTokenMarker extends TokenMarker
 
 	public byte markTokensImpl(byte token, Segment line, int lineIndex)
 	{
-
 		char[] array = line.array;
 		int offset = line.offset;
 		lastOffset = offset;
@@ -130,7 +129,7 @@ loop:		for(int i = offset; i < length; i++)
 				default:
 					backslash = false;
 					if(!Character.isLetterOrDigit(c)
-						&& c != '_' && c != '@')
+						&& c != '_')
 						doKeyword(line,i,c);
 					break;
 				}
